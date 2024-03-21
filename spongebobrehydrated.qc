@@ -1130,15 +1130,15 @@ $sequence "aimmatrix_crouch_melee_attack" {
 }
 
 $sequence "run_loser_MELEE" {
-	"spongebob_anims\runSW_MELEE.smd"
-	"spongebob_anims\runS_MELEE.smd"
-	"spongebob_anims\runSE_MELEE.smd"
-	"spongebob_anims\runW_MELEE.smd"
-	"spongebob_anims\runC_MELEE.smd"
-	"spongebob_anims\runE_MELEE.smd"
-	"spongebob_anims\runNW_MELEE.smd"
-	"spongebob_anims\runN_MELEE.smd"
-	"spongebob_anims\runNE_MELEE.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
+	"spongebob_anims\stun_middle.smd"
 	activity "ACT_MP_RUN_LOSERSTATE" 1
 	blend "move_y" -1 1
 	blend "move_x" -1 1
