@@ -1,12 +1,14 @@
 
 $modelname "freak_fortress_2/stardustbirds/spongebobrehydrated/engineer.mdl"
-$attachment "eyes" "Chest_M" 0 -6.80743 49.4563 absolute
+$attachment "eyes" "Neck_M" 0.00 10.67 6.91 rotate -90 -90 0
 $attachment "eye_R" "jt_eye_grp_R" -6.12801 -5 49.5113 absolute
 $attachment "eye_L" "jt_eye_grp_L" 6.12801 -5 49.5113 absolute
 
 $mostlyopaque
 
 $cbox 0 0 0 0 0 0
+
+$bbox -10 -22 0 10 22 64
 
 $hboxset "bob"
 $hbox 1 "jt_eye_grp_L" -6.08387 -7.04533 -6.32 6.08387 7.04533 6.32
@@ -1054,6 +1056,27 @@ $sequence "run_MELEE" {
 	loop
 }
 
+$sequence "run_MELEE_allclass" {
+	"spongebob_anims\runSW_MELEE.smd"
+	"spongebob_anims\runS_MELEE.smd"
+	"spongebob_anims\runSE_MELEE.smd"
+	"spongebob_anims\runW_MELEE.smd"
+	"spongebob_anims\runC_MELEE.smd"
+	"spongebob_anims\runE_MELEE.smd"
+	"spongebob_anims\runNW_MELEE.smd"
+	"spongebob_anims\runN_MELEE.smd"
+	"spongebob_anims\runNE_MELEE.smd"
+	activity "ACT_MP_RUN_MELEE_ALLCLASS" 1
+	blend "move_y" -1 1
+	blend "move_x" -1 1
+	fadein 0.2
+	fadeout 0.2
+	addlayer "aimmatrix_melee"
+	walkframe 35 LX LY
+	fps 30
+	loop
+}
+
 $sequence "aimmatrix_melee" {
 	"lookU"
 	"lookU"
@@ -1131,20 +1154,9 @@ $sequence "aimmatrix_crouch_melee_attack" {
 
 $sequence "run_loser_MELEE" {
 	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
-	"spongebob_anims\stun_middle.smd"
 	activity "ACT_MP_RUN_LOSERSTATE" 1
-	blend "move_y" -1 1
-	blend "move_x" -1 1
 	fadein 0.2
 	fadeout 0.2
-	walkframe 35 LX LY
 	fps 30
 	loop
 }
@@ -1160,6 +1172,26 @@ $sequence "crouch_walk" {
 	"spongebob_anims\CROUCH_WALK_N.smd"
 	"spongebob_anims\CROUCH_WALK_N.smd"
 	activity "ACT_MP_CROUCHWALK_MELEE" 1
+	blend "move_y" -1 1
+	blend "move_x" -1 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	walkframe 30 LX LY
+	loop
+}
+
+$sequence "crouch_walk_allclass" {
+	"spongebob_anims\CROUCH_WALK_S.smd"
+	"spongebob_anims\CROUCH_WALK_S.smd"
+	"spongebob_anims\CROUCH_WALK_S.smd"
+	"spongebob_anims\CROUCH_WALK_W.smd"
+	"spongebob_anims\CROUCH_IDLE.smd"
+	"spongebob_anims\CROUCH_WALK_E.smd"
+	"spongebob_anims\CROUCH_WALK_N.smd"
+	"spongebob_anims\CROUCH_WALK_N.smd"
+	"spongebob_anims\CROUCH_WALK_N.smd"
+	activity "ACT_MP_CROUCHWALK_MELEE_ALLCLASS" 1
 	blend "move_y" -1 1
 	blend "move_x" -1 1
 	fadein 0.2
@@ -1193,6 +1225,16 @@ $sequence "wobble" {
 $sequence "crouch_idle_MELEE" {
 	"spongebob_anims\CROUCH_IDLE.smd"
 	activity "ACT_MP_CROUCH_MELEE" 1
+	fadein 0.2
+	fadeout 0.2
+	addlayer "aimmatrix_crouch_melee"
+	fps 30
+	loop
+}
+
+$sequence "crouch_idle_MELEE_allclass" {
+	"spongebob_anims\CROUCH_IDLE.smd"
+	activity "ACT_MP_CROUCH_MELEE_ALLCLASS" 1
 	fadein 0.2
 	fadeout 0.2
 	addlayer "aimmatrix_crouch_melee"
@@ -1331,6 +1373,26 @@ $sequence "swim_MELEE" {
 	addlayer "aimmatrix_melee"
 }
 
+$sequence "swim_MELEE_allclass" {
+	"spongebob_anims\swim_S_MELEE.smd"
+	"spongebob_anims\swim_S_MELEE.smd"
+	"spongebob_anims\swim_S_MELEE.smd"
+	"spongebob_anims\swim_S_MELEE.smd"
+	"spongebob_anims\swim_C_MELEE.smd"
+	"spongebob_anims\swim_N_MELEE.smd"
+	"spongebob_anims\swim_N_MELEE.smd"
+	"spongebob_anims\swim_N_MELEE.smd"
+	"spongebob_anims\swim_N_MELEE.smd"
+	activity "ACT_MP_SWIM_MELEE_ALLCLASS" 1
+	blend "move_y" -1 1
+	blend "move_x" -1 1
+	walkframe 30 LX LY
+	fadein 0.2
+	fadeout 0.2
+	loop
+	addlayer "aimmatrix_melee"
+}
+
 $sequence "swim_loser_MELEE" {
 	"spongebob_anims\swim_S_MELEE.smd"
 	"spongebob_anims\swim_S_MELEE.smd"
@@ -1361,6 +1423,14 @@ $sequence "jump_start_MELEE" {
 	fps 30
 }
 
+$sequence "jump_start_MELEE_allclass" {
+	"spongebob_anims\jump_start.smd"
+	activity "ACT_MP_JUMP_START_MELEE_ALLCLASS" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
 $sequence "airwalk_MELEE" {
 	"spongebob_anims\airwalk_MELEE.smd"
 	activity "ACT_MP_AIRWALK_MELEE" 1
@@ -1370,9 +1440,27 @@ $sequence "airwalk_MELEE" {
 	loop
 }
 
+$sequence "airwalk_MELEE_allclass" {
+	"spongebob_anims\airwalk_MELEE.smd"
+	activity "ACT_MP_AIRWALK_MELEE_ALLCLASS" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+}
+
 $sequence "jump_float_MELEE" {
 	"spongebob_anims\airwalk_MELEE.smd"
-	activity "ACT_MP_JUMP_FLOAT_melee" 1
+	activity "ACT_MP_JUMP_FLOAT_MELEE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+}
+
+$sequence "jump_float_MELEE_allclass" {
+	"spongebob_anims\airwalk_MELEE.smd"
+	activity "ACT_MP_JUMP_FLOAT_MELEE_ALLCLASS" 1
 	fadein 0.2
 	fadeout 0.2
 	fps 30
@@ -1444,4 +1532,10 @@ $collisionjoints "spongePhys.smd"
 	$damping 0.01
 	$rotdamping 0.4
 	$rootbone "Spongebob_mesh_ao"
+}
+
+
+$sequence "fake_move" {
+	"spongebob_anims\swim_C_MELEE.smd"
+	fps 30
 }
