@@ -1,5 +1,5 @@
 
-$modelname "freak_fortress_2/stardustbirds/spongebobrehydrated/engineer.mdl"
+$modelname "freak_fortress_2/stardustbirds/spongebobrehydrated/spongebobrehydrated1.mdl"
 $attachment "eyes" "Neck_M" 0.00 10.67 6.91 rotate -90 -90 0
 $attachment "eye_R" "jt_eye_grp_R" -6.12801 -5 49.5113 absolute
 $attachment "eye_L" "jt_eye_grp_L" 6.12801 -5 49.5113 absolute
@@ -50,7 +50,6 @@ $hbox 0 "KneePart1_R" 0 -1.02642 -0.98 1.82322 0.3 0.68
 $hbox 0 "KneePart2_R" 0 -1.02642 -0.98 1.82322 0.3 0.68
 $hbox 0 "Ankle_R" -2.5 0 -1.02642 2 5.5 2
 $hbox 0 "Toes_R" -2.5 0 0 2 3.92 -4
-
 
 $model "sponge" sponge.smd {
 
@@ -891,6 +890,110 @@ $weightlist "armslayer_weights" {
      "jt_eyelid_UP_7_R" 1
 }
 
+$weightlist "flipping_burgers_weights" {
+	"Spongebob_mesh_ao" 0
+    "Pelvis" 0
+     "Spine1_M" 0
+     "Chest_M" 0
+     "Neck_M" 0
+     "Head_M" 0
+     "Hip_R" 0
+     "HipPart1_R" 0
+     "HipPart2_R" 0
+     "Knee_R" 0
+     "KneePart1_R" 0
+     "KneePart2_R" 0
+     "Hip_L" 0
+     "HipPart1_L" 0
+     "HipPart2_L" 0
+     "Knee_L" 0
+     "KneePart1_L" 0
+     "KneePart2_L" 0
+     "Ankle_L" 0
+     "Scapula_R" 0
+     "Shoulder_R" 0
+     "ShoulderPart1_R" 0
+     "ShoulderPart2_R" 0
+     "Elbow_R" 0
+     "ElbowPart1_R" 0
+     "Wrist_R" 0
+     "Ankle_R" 0
+     "jt_eye_grp_R" 0
+     "Scapula_L" 1
+     "Shoulder_L" 1
+     "ShoulderPart1_L" 1
+     "ShoulderPart2_L" 1
+     "Elbow_L" 1
+     "ElbowPart1_L" 1
+     "Wrist_L" 1
+     "jt_tongue" 0
+     "jt_tongue1" 0
+     "jt_tongue2" 0
+     "jt_tongue3" 0
+     "jt_toothDW" 0
+     "jt_eyelashes_R" 0
+     "jt_eyelid_DW_7_R" 0
+     "jt_eyelid_DW_6_R" 0
+     "jt_eyelid_DW_R" 0
+     "jt_toothUP" 0
+     "MiddleFinger1_L" 1
+     "MiddleFinger2_L" 1
+     "MiddleFinger3_L" 1
+     "ThumbFinger1_L" 1
+     "ThumbFinger2_L" 1
+     "IndexFinger1_L" 1
+     "IndexFinger2_L" 1
+     "IndexFinger3_L" 1
+     "RingFinger1_L" 1
+     "RingFinger2_L" 1
+     "RingFinger3_L" 1
+     "Nose1_M" 0
+     "jt_eyelashes_L" 0
+     "jt_eyelid_UP_7_L" 0
+     "jt_eyelid_UP_6_L" 0
+     "jt_eyelid_UP_5_L" 0
+     "jt_eyelid_UP_4_L" 0
+     "MiddleFinger1_R" 0
+     "MiddleFinger2_R" 0
+     "MiddleFinger3_R" 0
+     "ThumbFinger1_R" 0
+     "ThumbFinger2_R" 0
+     "IndexFinger1_R" 0
+     "IndexFinger2_R" 0
+     "IndexFinger3_R" 0
+     "RingFinger1_R" 0
+     "RingFinger2_R" 0
+     "RingFinger3_R" 0
+     "jt_eyelid_UP_3_L" 0
+     "jt_eyelid_UP_2_L" 0
+     "jt_eyelid_UP_1_L" 0
+     "jt_eyelid_UP_L" 0
+     "jt_eyelid_DW_7_L" 0
+     "jt_eyelid_DW_6_L" 0
+     "jt_eyelid_DW_5_L" 0
+     "Toes_L" 0
+     "jt_panties" 0
+     "jt_eyelid_DW_4_L" 0
+     "jt_eyelid_DW_3_L" 0
+     "jt_eyelid_DW_2_L" 0
+     "jt_eyelid_DW_1_L" 0
+     "jt_eyelid_DW_L" 0
+     "jt_eye_grp_L" 0
+     "Toes_R" 0
+     "jt_tie_00" 0
+     "jt_tie_01" 0
+     "jt_tie_03" 0
+     "JellyfishNet" 0
+     "jt_eyelid_UP_R" 0
+     "jt_eyelid_UP_1_R" 0
+     "jt_eyelid_UP_2_R" 0
+     "jt_eyelid_UP_3_R" 0
+     "jt_eyelid_UP_4_R" 0
+     "jt_eyelid_UP_5_R" 0
+     "jt_eyelid_UP_6_R" 0
+     "jt_eyelid_UP_7_R" 0
+}
+
 $weightlist "armslayer_crouch_weights" {
 	"Spongebob_mesh_ao" 0
     "Pelvis" 1
@@ -998,6 +1101,10 @@ $weightlist "armslayer_crouch_weights" {
 $animation "a_aim_correct" "spongebob_anims\@aim_corrective.smd" {
 }
 
+$animation "delta_correct" "spongebob_anims\@aim_corrective.smd" {
+    subtract "a_aim_correct" 0
+}
+
 $animation "lookUR" "spongebob_anims\stand_look_up_right.smd"{
 	subtract "a_aim_correct" 0
 }
@@ -1048,6 +1155,8 @@ $sequence "run_MELEE" {
 	activity "ACT_MP_RUN_MELEE" 1
 	blend "move_y" -1 1
 	blend "move_x" -1 1
+    { event 7001 19 "right" }
+	{ event 7001 1 "left" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "aimmatrix_melee"
@@ -1069,6 +1178,8 @@ $sequence "run_MELEE_allclass" {
 	activity "ACT_MP_RUN_MELEE_ALLCLASS" 1
 	blend "move_y" -1 1
 	blend "move_x" -1 1
+    { event 7001 19 "right" }
+	{ event 7001 1 "left" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "aimmatrix_melee"
@@ -1222,6 +1333,46 @@ $sequence "wobble" {
 	loop
 }
 
+$sequence "stand_LOSER" {
+	"spongebob_anims\stun_middle.smd"
+	activity "ACT_MP_STAND_LOSERSTATE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 3
+}
+
+$sequence "a_jumpstart_LOSER" {
+	"spongebob_anims\stun_middle.smd"
+	activity "ACT_MP_JUMP_START_LOSERSTATE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 25 25 target 0 usesequence 
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 25 25 target 1 usesequence 
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 25 25 target 2 usesequence 
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 25 25 target 3 usesequence 
+	walkframe 25 LX LY
+}
+
+$sequence "a_jumpfloat_LOSER" {
+	"spongebob_anims\stun_middle.smd"
+	activity "ACT_MP_JUMP_FLOAT_LOSERSTATE" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 34 34 target 0 usesequence 
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 34 34 target 1 usesequence 
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 34 34 target 2 usesequence 
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 34 34 target 3 usesequence 
+	walkframe 34 LX LY
+}
+
 $sequence "crouch_idle_MELEE" {
 	"spongebob_anims\CROUCH_IDLE.smd"
 	activity "ACT_MP_CROUCH_MELEE" 1
@@ -1252,16 +1403,6 @@ $sequence "armslayer_melee_swing_crouch" {
 	weightlist "armslayer_crouch_weights"
 }
 
-$sequence "armslayer_melee_swing" {
-	"spongebob_anims\MELEE_ATTACK.smd"
-	fadein 0.2
-	fadeout 0.2
-	addlayer "aimmatrix_melee"
-	hidden
-	fps 30
-	weightlist "armslayer_weights"
-}
-
 $sequence "swing_melee_crouched" {
 	"spongebob_anims\MELEE_ATTACK_CROUCH.smd"
 	activity "ACT_MP_ATTACK_CROUCH_MELEE" 1
@@ -1276,9 +1417,32 @@ $sequence "swing_melee_crouched" {
 	weightlist "melee_swing_weights"
 }
 
+$sequence "armslayer_melee_swing" {
+	"spongebob_anims\MELEE_ATTACK.smd"
+	fadein 0.2
+	fadeout 0.2
+	addlayer "aimmatrix_melee"
+	hidden
+	fps 30
+	weightlist "armslayer_weights"
+}
+
 $sequence "swing_melee" {
 	"spongebob_anims\MELEE_ATTACK.smd"
 	activity "ACT_MP_ATTACK_STAND_MELEE" 1
+	fadein 0.2
+	fadeout 0.2
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	blendlayer "armslayer_melee_swing" 0 1 20 24 spline
+	blendlayer "bodylayer_Melee_Swing" 0 5 20 24 spline
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "swing_melee_item2" {
+	"spongebob_anims\MELEE_ATTACK.smd"
+    activity "ACT_MP_ATTACK_STAND_ITEM2" 1
 	fadein 0.2
 	fadeout 0.2
 	iklock "rfoot" 1 0
@@ -1303,6 +1467,19 @@ $sequence "swing_melee_crouched_allclass" {
 	weightlist "melee_swing_weights"
 }
 
+$sequence "swing_melee_crouched_item2" {
+	"spongebob_anims\MELEE_ATTACK_CROUCH.smd"
+	activity "ACT_MP_ATTACK_CROUCH_ITEM2" 1
+	fadein 0.2
+	fadeout 0.2
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	iklock "lhand" 1 0
+	blendlayer "armslayer_melee_swing_crouch" 0 1 20 24 spline
+	blendlayer "bodylayer_Melee_Swing" 0 5 20 24 spline
+	fps 30
+	weightlist "melee_swing_weights"
+}
 
 $sequence "bodylayer_Melee_Swing" {
 	"spongebob_anims\bodylayer_Melee_Swing.smd"
@@ -1534,8 +1711,272 @@ $collisionjoints "spongePhys.smd"
 	$rootbone "Spongebob_mesh_ao"
 }
 
+$sequence "taunt_russian" {
+	"spongebob_anims\taunt_russian.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_TAUNT_ENABLE_MOVE 0 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 352 352 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 352 352 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 352 352 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 352 352 target 3
+}
+
+$sequence "taunt_conga" {
+	"spongebob_anims\taunt_russian.smd"
+	{ event AE_TAUNT_ENABLE_MOVE 0 "" }
+	{ event AE_WPN_HIDE 0 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30.03
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 345 345 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 345 345 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 345 345 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 345 345 target 3
+}
+
+$sequence "taunt_rps_start" {
+	"spongebob_anims\taunt_rps_start.smd"
+	{ event AE_WPN_HIDE 1 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 143 143 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 143 143 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 143 143 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 143 143 target 3
+}
+
+$sequence "layer_taunt_rps_rock" {
+	"spongebob_anims\taunt_rps_middle.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 3
+}
+
+$sequence "taunt_rps_rock" {
+	"spongebob_anims\rpsmiddle_corrective.smd"
+	{ event AE_WPN_HIDE 1 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_rock" 0 3 100 104
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_paper" {
+	"spongebob_anims\taunt_rps_middle.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 3
+}
+
+$sequence "taunt_rps_paper" {
+	"spongebob_anims\rpsmiddle_corrective.smd"
+	{ event AE_WPN_HIDE 1 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_paper" 0 3 100 104
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_scissors" {
+	"spongebob_anims\taunt_rps_middle.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 103 103 target 3
+}
+
+$sequence "taunt_rps_scissors" {
+	"spongebob_anims\rpsmiddle_corrective.smd"
+	{ event AE_WPN_HIDE 1 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_scissors" 0 3 100 104
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_rock_win" {
+	"spongebob_anims\taunt_rps_win.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 3
+}
+
+$sequence "taunt_rps_rock_win" {
+	"spongebob_anims\winlose_corrective.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_WPN_UNHIDE 195 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_rock_win" 0 0 197 201
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_paper_win" {
+	"spongebob_anims\taunt_rps_win.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 3
+}
+
+$sequence "taunt_rps_paper_win" {
+	"spongebob_anims\winlose_corrective.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_WPN_UNHIDE 195 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_paper_win" 0 0 197 201
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_scissors_win" {
+	"spongebob_anims\taunt_rps_win.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 200 200 target 3
+}
+
+$sequence "taunt_rps_scissors_win" {
+	"spongebob_anims\winlose_corrective.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_WPN_UNHIDE 195 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_scissors_win" 0 0 197 201
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_rock_lose" {
+	"spongebob_anims\taunt_rps_lose.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 3
+}
+
+$sequence "taunt_rps_rock_lose" {
+	"spongebob_anims\winlose_corrective.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_WPN_UNHIDE 195 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_rock_lose" 0 0 199 203
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_paper_lose" {
+	"spongebob_anims\taunt_rps_lose.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 3
+}
+
+$sequence "taunt_rps_paper_lose" {
+	"spongebob_anims\winlose_corrective.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_WPN_UNHIDE 195 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_paper_lose" 0 0 199 203
+	fps 30
+	weightlist "melee_swing_weights"
+}
+
+$sequence "layer_taunt_rps_scissors_lose" {
+	"spongebob_anims\taunt_rps_lose.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 1
+	ikrule "rfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 2
+	ikrule "lfoot" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 202 202 target 3
+}
+
+$sequence "taunt_rps_scissors_lose" {
+	"spongebob_anims\winlose_corrective.smd"
+	{ event AE_WPN_HIDE 0 "" }
+	{ event AE_WPN_UNHIDE 195 "" }
+	fadein 0.2
+	fadeout 0.2
+	blendlayer "layer_taunt_rps_scissors_lose" 0 0 199 203
+	fps 30
+	weightlist "melee_swing_weights"
+}
 
 $sequence "fake_move" {
 	"spongebob_anims\swim_C_MELEE.smd"
 	fps 30
 }
+
+$sequence "layer_gesture_melee_go_armL" {
+	"spongebob_anims\flipping_burgers.smd"
+	fadein 0.2
+	fadeout 0.2
+	hidden
+	fps 30
+//	ikrule "lhand" release contact 3 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 3 42 45 target 1
+	weightlist "flipping_burgers_weights"
+}
+
+$sequence "gesture_melee_go" {
+	"spongebob_anims\flipping_burgers.smd"
+	activity "ACT_MP_GESTURE_VC_FINGERPOINT_MELEE" 1
+    delta
+    subtract "a_aim_correct" 0
+	fadein 0.2
+	fadeout 0.2
+	addlayer "layer_gesture_melee_go_armL"
+	fps 30
+	weightlist "flipping_burgers_weights"
+}
+
