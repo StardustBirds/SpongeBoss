@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "freak_fortress_2/stardustbirds/spongebobrehydrated/spongebobrehydrated"
+
+	"$phong" "1"
+	"$phongboost" "0"
+	"$phongexponent" "10"
+	"$phongfresnelranges" "[2 1.2 8]"
+	"$phongalbedotint" "1"
+	"$normalmapalphaenvmapmask" "1"
+
+}
